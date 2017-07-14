@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\BitChatCore\BitChat.cs" Link="BitChat.cs" />
+    <Compile Include="..\BitChatCore\BitChatClient.cs" Link="BitChatClient.cs" />
+    <Compile Include="..\BitChatCore\BitChatException.cs" Link="BitChatException.cs" />
+    <Compile Include="..\BitChatCore\BitChatMessage.cs" Link="BitChatMessage.cs" />
+    <Compile Include="..\BitChatCore\BitChatProfile.cs" Link="BitChatProfile.cs" />
+    <Compile Include="..\BitChatCore\Debug.cs" Link="Debug.cs" />
+    <Compile Include="..\BitChatCore\FileSharing\SharedFile.cs" Link="FileSharing\SharedFile.cs" />
+    <Compile Include="..\BitChatCore\FileSharing\SharedFileMetaData.cs" Link="FileSharing\SharedFileMetaData.cs" />
+    <Compile Include="..\BitChatCore\IDebug.cs" Link="IDebug.cs" />
+    <Compile Include="..\BitChatCore\MessageItem.cs" Link="MessageItem.cs" />
+    <Compile Include="..\BitChatCore\MessageRecipient.cs" Link="MessageRecipient.cs" />
+    <Compile Include="..\BitChatCore\MessageStore.cs" Link="MessageStore.cs" />
+    <Compile Include="..\BitChatCore\Network\BinaryID.cs" Link="Network\BinaryID.cs" />
+    <Compile Include="..\BitChatCore\Network\BitChatNetwork.cs" Link="Network\BitChatNetwork.cs" />
+    <Compile Include="..\BitChatCore\Network\IPEndPointParser.cs" Link="Network\IPEndPointParser.cs" />
+    <Compile Include="..\BitChatCore\Network\KademliaDHT\DhtClient.cs" Link="Network\KademliaDHT\DhtClient.cs" />
+    <Compile Include="..\BitChatCore\Network\KademliaDHT\DhtRpcPacket.cs" Link="Network\KademliaDHT\DhtRpcPacket.cs" />
+    <Compile Include="..\BitChatCore\Network\KademliaDHT\IDhtClientManager.cs" Link="Network\KademliaDHT\IDhtClientManager.cs" />
+    <Compile Include="..\BitChatCore\Network\KademliaDHT\KBucket.cs" Link="Network\KademliaDHT\KBucket.cs" />
+    <Compile Include="..\BitChatCore\Network\KademliaDHT\NodeContact.cs" Link="Network\KademliaDHT\NodeContact.cs" />
+    <Compile Include="..\BitChatCore\Network\KademliaDHT\PeerEndPoint.cs" Link="Network\KademliaDHT\PeerEndPoint.cs" />
+    <Compile Include="..\BitChatCore\Network\LocalPeerDiscovery.cs" Link="Network\LocalPeerDiscovery.cs" />
+    <Compile Include="..\BitChatCore\Network\PeerInfo.cs" Link="Network\PeerInfo.cs" />
+    <Compile Include="..\BitChatCore\Network\SecureChannel\ISecureChannelSecurityManager.cs" Link="Network\SecureChannel\ISecureChannelSecurityManager.cs" />
+    <Compile Include="..\BitChatCore\Network\SecureChannel\SecureChannelClientStream.cs" Link="Network\SecureChannel\SecureChannelClientStream.cs" />
+    <Compile Include="..\BitChatCore\Network\SecureChannel\SecureChannelException.cs" Link="Network\SecureChannel\SecureChannelException.cs" />
+    <Compile Include="..\BitChatCore\Network\SecureChannel\SecureChannelPacket.cs" Link="Network\SecureChannel\SecureChannelPacket.cs" />
+    <Compile Include="..\BitChatCore\Network\SecureChannel\SecureChannelServerStream.cs" Link="Network\SecureChannel\SecureChannelServerStream.cs" />
+    <Compile Include="..\BitChatCore\Network\SecureChannel\SecureChannelStream.cs" Link="Network\SecureChannel\SecureChannelStream.cs" />
+    <Compile Include="..\BitChatCore\Network\TcpRelayClient.cs" Link="Network\TcpRelayClient.cs" />
+    <Compile Include="..\BitChatCore\Network\TcpRelayService.cs" Link="Network\TcpRelayService.cs" />
+    <Compile Include="..\BitChatCore\Network\TrackerManager.cs" Link="Network\TrackerManager.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FileSharing\" />
+    <Folder Include="Network\Connections\" />
+    <Folder Include="Network\KademliaDHT\" />
+    <Folder Include="Network\SecureChannel\" />
+  </ItemGroup>
+
+</Project>
