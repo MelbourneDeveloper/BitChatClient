@@ -62,12 +62,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\ChatListView.cs" />
+    <Compile Include="Model\DummyChatProvider.cs" />
+    <Compile Include="Model\IChatProvider.cs" />
     <Compile Include="Controls\IndicationNote.cs" />
     <Compile Include="Controls\MessageItem.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\IndicationNote.cs" />
+    <Compile Include="Model\ITextModel.cs" />
     <Compile Include="Model\Message.cs" />
     <Compile Include="Model\ModelBase.cs" />
     <Compile Include="Model\Profile.cs" />

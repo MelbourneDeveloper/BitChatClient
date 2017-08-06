@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BitChatAppXamarinForms.Model
 {
-    public class TextModelBase : ModelBase
+    public class TextModelBase : ModelBase, ITextModel
     {
         private string _Text;
 
