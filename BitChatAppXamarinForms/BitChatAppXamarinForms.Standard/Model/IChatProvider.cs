@@ -1,7 +1,5 @@
-﻿using BitChatAppXamarinForms.Model;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.ComponentModel;
 using System.Threading.Tasks;
 
 namespace BitChatAppXamarinForms.Model
@@ -10,5 +8,6 @@ namespace BitChatAppXamarinForms.Model
     {
         Task LoadAllAsync();
         Profile CurrentProfile { get; }
+        void SendMessage(IMessage message);
     }
 }

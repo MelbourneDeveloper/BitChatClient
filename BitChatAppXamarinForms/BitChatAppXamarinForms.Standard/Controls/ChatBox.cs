@@ -66,7 +66,7 @@ namespace BitChatAppXamarinForms.Controls
 
                     foreach (var item in _ChatProvider)
                     {
-                        var message = item as Message;
+                        var message = item as IMessage;
                         var indicationNote = item as IndicationNote;
 
                         if (message == null && indicationNote == null)
@@ -87,7 +87,7 @@ namespace BitChatAppXamarinForms.Controls
             }
         }
 
-        private void ProcessMessage(Message message)
+        private void ProcessMessage(IMessage message)
         {
             var isCurrentProfile = message.FromProfile.Equals(ChatProvider.CurrentProfile);
 

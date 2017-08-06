@@ -20,5 +20,10 @@ namespace BitChatAppXamarinForms.Model
             Add(new Message { FromProfile = CurrentProfile, Text = "I'm alright.", MessageDate = DateTime.Now });
             Add(new Message { FromProfile = CurrentProfile, Text = "I'm doing some coding.", MessageDate = DateTime.Now });
         }
+
+        public void SendMessage(IMessage message)
+        {
+            Add(message);
+        }
     }
 }
