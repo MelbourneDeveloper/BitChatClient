@@ -11,8 +11,9 @@ namespace BitChatAppXamarinForms.Controls
         public static BindableProperty ChatProviderProperty = BindableProperty.Create("ChatProvider", typeof(IChatProvider), typeof(ChatBox));
         public static Color BitChatBackgroundColour = Color.FromRgb(224, 224, 224);
 
-        private StackLayout _MainLayout = new StackLayout { Orientation = StackOrientation.Horizontal };
+        private StackLayout _MainLayout = new StackLayout { Orientation = StackOrientation.Vertical };
         private IChatProvider _ChatProvider;
+        private bool _IsRefreshing;
 
         public IChatProvider ChatProvider
         {
@@ -41,41 +42,58 @@ namespace BitChatAppXamarinForms.Controls
 
         private async Task RefreshAsync()
         {
-            _MainLayout.Children.Clear();
-
-            if (_ChatProvider == null)
+            //TODO: This is not good handling. If a new item is added while refresh is going on, it might be missed. Fixed this
+            if (_IsRefreshing)
             {
                 return;
             }
+            _IsRefreshing = true;
 
-            foreach (var item in _ChatProvider)
+            try
             {
-                var message = item as Message;
-                var indicationNote = item as IndicationNote;
-
-                if (message == null && indicationNote == null)
+                Device.BeginInvokeOnMainThread(() =>
                 {
-                    throw new Exception($"Item type {item.GetType()} not supported");
-                }
 
-                if (message != null)
-                {
-                    ProcessMessage(message);
-                }
+                    _MainLayout.Children.Clear();
+
+                    if (_ChatProvider == null)
+                    {
+                        return;
+                    }
+
+                    foreach (var item in _ChatProvider)
+                    {
+                        var message = item as Message;
+                        var indicationNote = item as IndicationNote;
+
+                        if (message == null && indicationNote == null)
+                        {
+                            throw new Exception($"Item type {item.GetType()} not supported");
+                        }
+
+                        if (message != null)
+                        {
+                            ProcessMessage(message);
+                        }
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+
             }
         }
 
         private void ProcessMessage(Message message)
         {
-            Device.BeginInvokeOnMainThread(() =>
+
+            var messageItem = new MessageItem()
             {
-                var messageItem = new MessageItem()
-                {
-                    BindingContext = message,
-                    HorizontalOptions = message.FromProfile.Equals(ChatProvider.CurrentProfile) ? LayoutOptions.End : LayoutOptions.Start
-                };
-                _MainLayout.Children.Add(messageItem);
-            });
+                BindingContext = message,
+                HorizontalOptions = message.FromProfile.Equals(ChatProvider.CurrentProfile) ? LayoutOptions.End : LayoutOptions.Start
+            };
+            _MainLayout.Children.Add(messageItem);
+
         }
     }
 }
