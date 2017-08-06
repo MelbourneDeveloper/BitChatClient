@@ -7,8 +7,8 @@
     <ProjectGuid>{C63C5247-D337-4525-A705-42366FA1A05D}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>apsu</RootNamespace>
-    <AssemblyName>Adapt.PresentationSamples.UWP</AssemblyName>
+    <RootNamespace>BitChatAppXamarinForms.UWP</RootNamespace>
+    <AssemblyName>BitChatAppXamarinForms.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
