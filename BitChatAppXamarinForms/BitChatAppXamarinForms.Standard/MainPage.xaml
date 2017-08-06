@@ -5,6 +5,6 @@
             Title="Samples"
              x:Class="Adapt.PresentationSamples.MainPage">
 
-    <Label Text="Test" />
+    <Label Text="Test" VerticalOptions="Center" HorizontalOptions="Center" />
 
 </ContentPage>
