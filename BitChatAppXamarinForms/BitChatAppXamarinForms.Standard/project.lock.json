@@ -968,6 +968,13 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        }
       }
     }
   },
@@ -3992,6 +3999,11 @@
         "xamarin.forms.2.3.4.247.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "BitChatCore.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../BitChatCore.Standard/BitChatCore.Standard.csproj",
+      "msbuildProject": "../../BitChatCore.Standard/BitChatCore.Standard.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4011,7 +4023,16 @@
       "projectName": "BitChatAppXamarinForms.Standard",
       "projectPath": "C:\\GitRepos\\BitChatClientXF\\BitChatAppXamarinForms\\BitChatAppXamarinForms.Standard\\BitChatAppXamarinForms.Standard.csproj",
       "projectJsonPath": "C:\\GitRepos\\BitChatClientXF\\BitChatAppXamarinForms\\BitChatAppXamarinForms.Standard\\project.json",
-      "projectStyle": "ProjectJson"
+      "projectStyle": "ProjectJson",
+      "frameworks": {
+        "netstandard1.4": {
+          "projectReferences": {
+            "C:\\GitRepos\\BitChatClientXF\\BitChatCore.Standard\\BitChatCore.Standard.csproj": {
+              "projectPath": "C:\\GitRepos\\BitChatClientXF\\BitChatCore.Standard\\BitChatCore.Standard.csproj"
+            }
+          }
+        }
+      }
     },
     "dependencies": {
       "NETStandard.Library": "1.6.1",

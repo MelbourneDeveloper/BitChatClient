@@ -2418,9 +2418,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     },
@@ -4871,9 +4879,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     },
@@ -7363,9 +7379,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     },
@@ -9825,9 +9849,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     },
@@ -12326,9 +12358,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     },
@@ -14788,9 +14828,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     },
@@ -17289,9 +17337,17 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
+          "BitChatCore.Standard": "1.0.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
+        }
+      },
+      "BitChatCore.Standard/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
         }
       }
     }
@@ -26034,6 +26090,11 @@
       "type": "project",
       "path": "../BitChatAppXamarinForms.Standard/project.json",
       "msbuildProject": "../BitChatAppXamarinForms.Standard/BitChatAppXamarinForms.Standard.csproj"
+    },
+    "BitChatCore.Standard/1.0.0": {
+      "type": "project",
+      "path": "../../BitChatCore.Standard/BitChatCore.Standard.csproj",
+      "msbuildProject": "../../BitChatCore.Standard/BitChatCore.Standard.csproj"
     }
   },
   "projectFileDependencyGroups": {
