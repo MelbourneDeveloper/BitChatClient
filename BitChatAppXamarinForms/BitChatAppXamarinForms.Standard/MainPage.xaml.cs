@@ -13,7 +13,7 @@ namespace Adapt.PresentationSamples
         public MainPage()
         {
             InitializeComponent();
-            MainNavigationPage.PushAsync(new ContentPage { Content = new ChatListView() });
+            MainNavigationPage.PushAsync(new ContentPage { Content = new ChatBox() });
         }
 
         protected async override void OnAppearing()

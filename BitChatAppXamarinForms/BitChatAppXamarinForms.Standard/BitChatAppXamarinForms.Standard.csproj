@@ -61,10 +61,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ChatListView.cs" />
+    <Compile Include="Controls\ChatBox.cs" />
     <Compile Include="Model\DummyChatProvider.cs" />
     <Compile Include="Model\IChatProvider.cs" />
-    <Compile Include="Controls\IndicationNote.cs" />
+    <Compile Include="Controls\IndicationNoteItem.cs" />
     <Compile Include="Controls\MessageItem.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

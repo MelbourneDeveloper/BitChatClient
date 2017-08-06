@@ -23,5 +23,14 @@
                 RaisePropertyChanged();
             }
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Profile profile)
+            {
+                return profile.EmailAddress.ToLower() == profile.EmailAddress;
+            }
+            return false;
+        }
     }
 }
