@@ -19,7 +19,7 @@
                     <ColumnDefinition Width="100" />
                 </Grid.ColumnDefinitions>
 
-                <Editor />
+                <Editor x:Name="TheEditor" TextChanged="TheEditor_TextChanged"  />
 
                 <Grid Grid.Column="1" >
 
@@ -27,9 +27,9 @@
                         <RowDefinition Height="50*" />
                         <RowDefinition Height="50*" />
                     </Grid.RowDefinitions>
-                    
-                    <Button Text="Send" />
-                    <Button Text="Share" Grid.Row="1" />
+
+                    <Button Text="Send" Clicked="SendButton_Clicked" IsEnabled="False" x:Name="SendButton" />
+                    <Button Text="Share" Grid.Row="1"  />
                 </Grid>
                 
             </Grid>

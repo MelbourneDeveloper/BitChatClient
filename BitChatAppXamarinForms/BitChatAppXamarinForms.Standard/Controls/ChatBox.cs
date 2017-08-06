@@ -85,6 +85,7 @@ namespace BitChatAppXamarinForms.Controls
             {
 
             }
+            _IsRefreshing = false;
         }
 
         private void ProcessMessage(IMessage message)
