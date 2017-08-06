@@ -21,10 +21,16 @@
 
                 <Editor />
 
-                <StackLayout Grid.Column="1" Orientation="Vertical">
+                <Grid Grid.Column="1" >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50*" />
+                        <RowDefinition Height="50*" />
+                    </Grid.RowDefinitions>
+                    
                     <Button Text="Send" />
-                    <Button Text="Share" />
-                </StackLayout>
+                    <Button Text="Share" Grid.Row="1" />
+                </Grid>
                 
             </Grid>
           

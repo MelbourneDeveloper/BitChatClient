@@ -9,6 +9,7 @@ namespace BitChatAppXamarinForms.Controls
         public IndicationNoteItem()
         {
             BackgroundColor = IndicationColour;
+            TextColor = Color.Black;
             SetBinding(TextProperty, new Binding("Text"));
             HorizontalOptions = LayoutOptions.Center;
         }

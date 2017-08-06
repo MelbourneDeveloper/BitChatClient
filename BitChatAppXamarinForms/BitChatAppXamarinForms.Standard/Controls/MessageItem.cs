@@ -14,7 +14,6 @@ namespace BitChatAppXamarinForms.Controls
         public MessageItem()
         {
             BackgroundColor = Color.White;
-
             Margin = new Thickness(4);
 
             Orientation = StackOrientation.Vertical;
@@ -29,11 +28,13 @@ namespace BitChatAppXamarinForms.Controls
             _TextLabel.SetBinding(Label.TextProperty, new Binding(nameof(Message.Text)));
             _TextLabel.HorizontalTextAlignment = TextAlignment.Start;
             _TextLabel.MinimumWidthRequest = 300;
+            _TextLabel.TextColor = Color.Black;
             Children.Add(_TextLabel);
 
             _DateTimeLabel = new Label();
             _DateTimeLabel.SetBinding(Label.TextProperty, new Binding(nameof(Message.MessageDate)));
             _DateTimeLabel.HorizontalTextAlignment = TextAlignment.End;
+            _DateTimeLabel.TextColor = Color.Black;
             Children.Add(_DateTimeLabel);
         }
     }
