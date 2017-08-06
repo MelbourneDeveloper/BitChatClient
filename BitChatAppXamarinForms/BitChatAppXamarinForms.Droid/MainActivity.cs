@@ -1,5 +1,6 @@
 ﻿
 using Adapt.Presentation.AndroidPlatform;
+using Adapt.PresentationSamples;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
