@@ -10,7 +10,7 @@ using xf = Xamarin.Forms;
 
 namespace XamForms.Droid
 {
-    [Activity(Label = "Adapt.Presentation Samples", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Bit Chat", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : xf.Platform.Android.FormsApplicationActivity, IRequestPermissionsActivity
     {
         #region Fields
