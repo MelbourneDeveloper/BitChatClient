@@ -65,6 +65,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\ModelBase.cs" />
+    <Compile Include="Model\Profile.cs" />
     <Compile Include="Pages\MenuPanel.xaml.cs">
       <DependentUpon>MenuPanel.xaml</DependentUpon>
     </Compile>
