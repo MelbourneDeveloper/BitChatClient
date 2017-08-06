@@ -28,7 +28,7 @@
         {
             if (obj is Profile profile)
             {
-                return profile.EmailAddress.ToLower() == profile.EmailAddress;
+                return profile.EmailAddress.ToLower() == this.EmailAddress.ToLower();
             }
             return false;
         }

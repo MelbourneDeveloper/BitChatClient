@@ -13,6 +13,10 @@ namespace BitChatAppXamarinForms.Controls
 
         public MessageItem()
         {
+            BackgroundColor = Color.White;
+
+            Margin = new Thickness(4);
+
             Orientation = StackOrientation.Vertical;
 
             _ProfileLabel = new Label();

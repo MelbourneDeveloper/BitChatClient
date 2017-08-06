@@ -86,11 +86,12 @@ namespace BitChatAppXamarinForms.Controls
 
         private void ProcessMessage(Message message)
         {
+            var isCurrentProfile = message.FromProfile.Equals(ChatProvider.CurrentProfile);
 
             var messageItem = new MessageItem()
             {
                 BindingContext = message,
-                HorizontalOptions = message.FromProfile.Equals(ChatProvider.CurrentProfile) ? LayoutOptions.End : LayoutOptions.Start
+                HorizontalOptions = isCurrentProfile ? LayoutOptions.End : LayoutOptions.Start
             };
             _MainLayout.Children.Add(messageItem);
 

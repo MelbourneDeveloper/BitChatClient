@@ -15,8 +15,10 @@ namespace BitChatAppXamarinForms.Model
 
         public async Task LoadAllAsync()
         {
-            Add(new Message { FromProfile = CurrentProfile, Text = "Test", MessageDate = DateTime.Now });
-            Add(new Message { FromProfile = new Profile { EmailAddress = "test@test.com", ProfileName = "Test Guy" }, Text = "Test", MessageDate = DateTime.Now });
+            Add(new Message { FromProfile = CurrentProfile, Text = "Hi.", MessageDate = DateTime.Now });
+            Add(new Message { FromProfile = new Profile { EmailAddress = "test@test.com", ProfileName = "Test Guy" }, Text = "Hi. How are you?", MessageDate = DateTime.Now });
+            Add(new Message { FromProfile = CurrentProfile, Text = "I'm alright.", MessageDate = DateTime.Now });
+            Add(new Message { FromProfile = CurrentProfile, Text = "I'm doing some coding.", MessageDate = DateTime.Now });
         }
     }
 }
