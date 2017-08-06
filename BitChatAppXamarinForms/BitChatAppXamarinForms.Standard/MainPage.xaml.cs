@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms.Xaml;
+﻿using BitChatAppXamarinForms.Controls;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Adapt.PresentationSamples
 {
@@ -8,6 +10,12 @@ namespace Adapt.PresentationSamples
         public MainPage()
         {
             InitializeComponent();
+            MainNavigationPage.PushAsync(new ContentPage { Content = new ChatListView() });
+        }
+
+        protected async override void OnAppearing()
+        {
+            base.OnAppearing();
         }
     }
 }
