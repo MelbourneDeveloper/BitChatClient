@@ -2,21 +2,10 @@
 
 namespace BitChatAppXamarinForms.Model
 {
-    public class Message : ModelBase
+    public class Message : TextModelBase
     {
-        private string _Text;
         private DateTime _MessageDate;
         private Profile _FromProfile;
-
-        public string Text
-        {
-            get => _Text;
-            set
-            {
-                _Text = value;
-                RaisePropertyChanged();
-            }
-        }
 
         public DateTime MessageDate
         {
