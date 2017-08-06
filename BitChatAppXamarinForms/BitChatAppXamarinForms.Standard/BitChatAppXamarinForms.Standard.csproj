@@ -89,10 +89,4 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\BitChatCore.Standard\BitChatCore.Standard.csproj">
-      <Project>{f4fec4d3-59d1-49a5-b33e-f7b27cea3fe0}</Project>
-      <Name>BitChatCore.Standard</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

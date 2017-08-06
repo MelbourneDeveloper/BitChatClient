@@ -1,5 +1,6 @@
 ﻿
 using samples = Adapt.PresentationSamples;
+using Adapt.Presentation.UWP;
 
 namespace XamForms.UWP
 {
@@ -8,6 +9,8 @@ namespace XamForms.UWP
         public MainPage()
         {
             InitializeComponent();
+
+            Adapt.PresentationSamples.MainPage.Permissions = new Permissions();
 
             var app = new samples.App();
 

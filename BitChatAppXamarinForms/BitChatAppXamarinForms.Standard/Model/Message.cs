@@ -6,6 +6,7 @@ namespace BitChatAppXamarinForms.Model
     {
         private string _Text;
         private DateTime _MessageDate;
+        private Profile _FromProfile;
 
         public string Text
         {
@@ -22,6 +23,16 @@ namespace BitChatAppXamarinForms.Model
             get => _MessageDate; set
             {
                 _MessageDate = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public Profile FromProfile
+        {
+            get => _FromProfile;
+            set
+            {
+                _FromProfile = value;
                 RaisePropertyChanged();
             }
         }

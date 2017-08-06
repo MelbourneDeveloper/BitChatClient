@@ -1,11 +1,9 @@
 ﻿
 using Adapt.Presentation.AndroidPlatform;
-using Adapt.Presentation.AndroidPlatform.Geolocator;
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
-using samples = Adapt.PresentationSamples;
 using xf = Xamarin.Forms;
 
 namespace XamForms.Droid
@@ -25,10 +23,10 @@ namespace XamForms.Droid
         protected override void OnCreate(Bundle bundle)
         {
             var permissions = new Permissions(this);
-            _PresentationFactory = new PresentationFactory(ApplicationContext, permissions);
+            _PresentationFactory = new PresentationFactory(this, permissions);
             base.OnCreate(bundle);
             xf.Forms.Init(this, bundle);
-            LoadApplication(new samples.App(_PresentationFactory, permissions, new Geolocator(permissions)));
+            LoadApplication(new App());
         }
         #endregion
 

@@ -2,6 +2,17 @@
   "version": 2,
   "targets": {
     "UAP,Version=v10.0": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -2418,21 +2429,25 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     },
     "UAP,Version=v10.0/win10-arm": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4879,21 +4894,25 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -7379,21 +7398,25 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     },
     "UAP,Version=v10.0/win10-x64": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -9849,21 +9872,25 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -12358,21 +12385,25 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     },
     "UAP,Version=v10.0/win10-x86": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -14828,21 +14859,25 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Adapt.Presentation.Standard.dll": {},
+          "lib/uap10.0/Adapt.Presentation.UWP.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -17337,22 +17372,31 @@
         "type": "project",
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
-          "BitChatCore.Standard": "1.0.0",
+          "Adapt.Presentation": "1.2.0",
           "NETStandard.Library": "1.6.1",
           "System.ComponentModel": "4.3.0",
           "Xamarin.Forms": "2.3.4.247"
-        }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
         }
       }
     }
   },
   "libraries": {
+    "Adapt.Presentation/1.2.0": {
+      "sha512": "1En4RWZBx+MZ7QDGmA1LvWndbtd3/zbTWl4B6Czr+8Z7DHdfNx/2ewE2YohZTICWAlv3S0TuD8OlzVKUV1HQlQ==",
+      "type": "package",
+      "path": "adapt.presentation/1.2.0",
+      "files": [
+        "adapt.presentation.1.2.0.nupkg.sha512",
+        "adapt.presentation.nuspec",
+        "lib/MonoAndroid/Adapt.Presentation.Android.dll",
+        "lib/MonoAndroid/Adapt.Presentation.Standard.dll",
+        "lib/netstandard1.4/Adapt.Presentation.Standard.dll",
+        "lib/uap10.0/Adapt.Presentation.Standard.dll",
+        "lib/uap10.0/Adapt.Presentation.UWP.dll",
+        "lib/xamarinios/Adapt.Presentation.Standard.dll",
+        "lib/xamarinios/Adapt.Presentation.iOS.dll"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -26090,15 +26134,11 @@
       "type": "project",
       "path": "../BitChatAppXamarinForms.Standard/project.json",
       "msbuildProject": "../BitChatAppXamarinForms.Standard/BitChatAppXamarinForms.Standard.csproj"
-    },
-    "BitChatCore.Standard/1.0.0": {
-      "type": "project",
-      "path": "../../BitChatCore.Standard/BitChatCore.Standard.csproj",
-      "msbuildProject": "../../BitChatCore.Standard/BitChatCore.Standard.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "Adapt.Presentation >= 1.2.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.3.3",
       "Xamarin.Forms >= 2.3.4.247"
     ],
@@ -26125,6 +26165,7 @@
       }
     },
     "dependencies": {
+      "Adapt.Presentation": "1.2.0",
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3",
       "Xamarin.Forms": "2.3.4.247"
     },

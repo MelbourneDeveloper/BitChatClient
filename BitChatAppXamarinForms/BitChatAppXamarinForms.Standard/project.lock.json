@@ -2,6 +2,15 @@
   "version": 2,
   "targets": {
     ".NETStandard,Version=v1.4": {
+      "Adapt.Presentation/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.4/Adapt.Presentation.Standard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Adapt.Presentation.Standard.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -968,17 +977,26 @@
         "build": {
           "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.targets": {}
         }
-      },
-      "BitChatCore.Standard/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        }
       }
     }
   },
   "libraries": {
+    "Adapt.Presentation/1.2.0": {
+      "sha512": "1En4RWZBx+MZ7QDGmA1LvWndbtd3/zbTWl4B6Czr+8Z7DHdfNx/2ewE2YohZTICWAlv3S0TuD8OlzVKUV1HQlQ==",
+      "type": "package",
+      "path": "adapt.presentation/1.2.0",
+      "files": [
+        "adapt.presentation.1.2.0.nupkg.sha512",
+        "adapt.presentation.nuspec",
+        "lib/MonoAndroid/Adapt.Presentation.Android.dll",
+        "lib/MonoAndroid/Adapt.Presentation.Standard.dll",
+        "lib/netstandard1.4/Adapt.Presentation.Standard.dll",
+        "lib/uap10.0/Adapt.Presentation.Standard.dll",
+        "lib/uap10.0/Adapt.Presentation.UWP.dll",
+        "lib/xamarinios/Adapt.Presentation.Standard.dll",
+        "lib/xamarinios/Adapt.Presentation.iOS.dll"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -3999,15 +4017,11 @@
         "xamarin.forms.2.3.4.247.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
-    },
-    "BitChatCore.Standard/1.0.0": {
-      "type": "project",
-      "path": "../../BitChatCore.Standard/BitChatCore.Standard.csproj",
-      "msbuildProject": "../../BitChatCore.Standard/BitChatCore.Standard.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "": [
+      "Adapt.Presentation >= 1.2.0",
       "NETStandard.Library >= 1.6.1",
       "System.ComponentModel >= 4.3.0",
       "Xamarin.Forms >= 2.3.4.247"
@@ -4023,18 +4037,10 @@
       "projectName": "BitChatAppXamarinForms.Standard",
       "projectPath": "C:\\GitRepos\\BitChatClientXF\\BitChatAppXamarinForms\\BitChatAppXamarinForms.Standard\\BitChatAppXamarinForms.Standard.csproj",
       "projectJsonPath": "C:\\GitRepos\\BitChatClientXF\\BitChatAppXamarinForms\\BitChatAppXamarinForms.Standard\\project.json",
-      "projectStyle": "ProjectJson",
-      "frameworks": {
-        "netstandard1.4": {
-          "projectReferences": {
-            "C:\\GitRepos\\BitChatClientXF\\BitChatCore.Standard\\BitChatCore.Standard.csproj": {
-              "projectPath": "C:\\GitRepos\\BitChatClientXF\\BitChatCore.Standard\\BitChatCore.Standard.csproj"
-            }
-          }
-        }
-      }
+      "projectStyle": "ProjectJson"
     },
     "dependencies": {
+      "Adapt.Presentation": "1.2.0",
       "NETStandard.Library": "1.6.1",
       "System.ComponentModel": "4.3.0",
       "Xamarin.Forms": "2.3.4.247"
