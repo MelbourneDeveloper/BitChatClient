@@ -27,6 +27,7 @@ namespace XamForms.Droid
             _PresentationFactory = new PresentationFactory(this, permissions);
             base.OnCreate(bundle);
             xf.Forms.Init(this, bundle);
+            MainPage.Permissions = new Permissions(this);
             LoadApplication(new App());
         }
         #endregion

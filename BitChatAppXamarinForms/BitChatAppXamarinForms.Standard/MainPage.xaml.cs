@@ -19,7 +19,6 @@ namespace Adapt.PresentationSamples
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            var bla = await Permissions.RequestPermissionsAsync(Permission.Storage);
 
         }
     }
