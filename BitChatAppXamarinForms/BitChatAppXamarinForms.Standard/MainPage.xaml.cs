@@ -1,7 +1,6 @@
 ﻿using Adapt.Presentation;
-using BitChatAppXamarinForms.Controls;
 using BitChatAppXamarinForms.Model;
-using Xamarin.Forms;
+using BitChatAppXamarinForms.Pages;
 using Xamarin.Forms.Xaml;
 
 namespace Adapt.PresentationSamples
@@ -17,7 +16,10 @@ namespace Adapt.PresentationSamples
 
             var currentProfile = new Profile { EmailAddress = "Christian_findlay@hotmail.com", ProfileName = "Christian Findlay" };
 
-            MainNavigationPage.PushAsync(new ContentPage { Content = new ChatBox { ChatProvider = new DummyChatProvider(currentProfile) } });
+            var chatPage = new ChatPage();
+            chatPage.ChatProvider = new DummyChatProvider(currentProfile);
+
+            MainNavigationPage.PushAsync(chatPage);
         }
 
         protected async override void OnAppearing()

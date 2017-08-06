@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:BitChatAppXamarinForms.Controls"
+             x:Class="BitChatAppXamarinForms.Pages.ChatPage">
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+
+            <controls:ChatBox x:Name="TheChatBox" />
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <Editor />
+
+                <StackLayout Grid.Column="1" Orientation="Vertical">
+                    <Button Text="Send" />
+                    <Button Text="Share" />
+                </StackLayout>
+                
+            </Grid>
+          
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

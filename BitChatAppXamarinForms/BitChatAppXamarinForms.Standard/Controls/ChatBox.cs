@@ -61,6 +61,9 @@ namespace BitChatAppXamarinForms.Controls
                         return;
                     }
 
+                    //TODO: This is just a dummy indicator for now
+                    _MainLayout.Children.Add(new IndicationNoteItem { BindingContext = new IndicationNote { Text = DateTime.Now.ToString() } });
+
                     foreach (var item in _ChatProvider)
                     {
                         var message = item as Message;

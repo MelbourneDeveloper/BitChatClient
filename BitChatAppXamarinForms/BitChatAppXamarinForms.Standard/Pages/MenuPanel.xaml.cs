@@ -15,6 +15,8 @@ namespace BitChatAppXamarinForms.Pages
         public MenuPanel()
         {
             InitializeComponent();
+
+            BackgroundColor = Color.FromRgb(45, 67, 69);
         }
     }
 }

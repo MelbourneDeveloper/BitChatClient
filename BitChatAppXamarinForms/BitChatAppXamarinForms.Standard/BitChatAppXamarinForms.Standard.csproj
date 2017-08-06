@@ -75,6 +75,9 @@
     <Compile Include="Model\ModelBase.cs" />
     <Compile Include="Model\Profile.cs" />
     <Compile Include="Model\TextModelBase.cs" />
+    <Compile Include="Pages\ChatPage.xaml.cs">
+      <DependentUpon>ChatPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MenuPanel.xaml.cs">
       <DependentUpon>MenuPanel.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\MenuPanel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\ChatPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
