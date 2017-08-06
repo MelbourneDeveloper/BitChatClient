@@ -1,23 +1,10 @@
-﻿using Adapt.Presentation;
-using Adapt.Presentation.Geolocator;
-
-namespace Adapt.PresentationSamples
+﻿namespace Adapt.PresentationSamples
 {
     public partial class App
     {
-        #region Public Static Properties
-        public static IPresentationFactory PresentationFactory { get; private set; }
-        public static IPermissions CurrentPermissions { get; private set; }
-        public static IGeolocator Geolocator { get; private set; }
-        #endregion
-
         #region Constructor
-        public App(IPresentationFactory presentationFactory, IPermissions currentPermissions, IGeolocator geolocator)
+        public App()
         {
-            PresentationFactory = presentationFactory;
-            CurrentPermissions = currentPermissions;
-            Geolocator = geolocator;
-
             var mainPage = new MainPage();
 
             InitializeComponent();

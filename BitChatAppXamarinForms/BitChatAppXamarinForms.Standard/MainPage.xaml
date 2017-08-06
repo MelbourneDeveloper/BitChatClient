@@ -1,103 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:controls="clr-namespace:Adapt.Presentation.Controls;assembly=Adapt.Presentation.Standard"
             Title="Samples"
              x:Class="Adapt.PresentationSamples.MainPage">
-    <!--Pages can be added as references or inline-->
-    
-    <ContentPage Title="Camera" >
-        <Button Margin="4" Text="Take Photo" x:Name="TakePhotoButton"  />
-    </ContentPage>
 
-    <ContentPage Title="Choose File" >
-        <Button Margin="4" Text="Choose File" x:Name="ChooseFileButton"  />
-    </ContentPage>
+    <Label Text="Test" />
 
-    <ContentPage Title="DateTimePicker" x:Name="DateTimePickerTab" >
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50*" />
-                <RowDefinition Height="50*" />
-                <RowDefinition Height="50*" />
-            </Grid.RowDefinitions>
-
-            <Label Text="Notice this works with two way binding" />
-
-            <controls:DateTimePicker Value="{Binding TheDateTime}" Grid.Row="1" />
-
-            <Entry Text="{Binding TheDateTime, Mode=TwoWay}" Grid.Row="2" />
-
-        </Grid>
-    </ContentPage>
-
-    <ContentPage Title="WrapLayout" >
-        <controls:WrapLayout>
-
-            <Label Text="Some Text" />
-
-            <controls:DateTimePicker />
-
-            <Entry Text="Something"  />
-
-        </controls:WrapLayout>
-    </ContentPage>
-
-
-    <ContentPage Title="Load XAML (Dynamic Rendering)" >
-        
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60*" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="40*" />
-            </Grid.RowDefinitions>
-
-            <Editor x:Name="XAMLBox" />
-            <Button Text="Render" Grid.Row="1" x:Name="RenderButton" />
-            <ContentView x:Name="ContentBox" Grid.Row="2" />
-
-        </Grid>
-    </ContentPage>
-
-    <ContentPage Title="Request Permissions" >
-        <Button Margin="4" Text="Request Storage Permissions - Mostly Android. Only in Android M and later." x:Name="RequestPermissionButton"  />
-    </ContentPage>
-    
-    <ContentPage Title="Geo Location" x:Name="GeoLocationTab" >
-
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-                <RowDefinition Height="40" />
-            </Grid.RowDefinitions>
-
-            <StackLayout Orientation="Horizontal" >
-                <Label Text="Longitude: " />
-                <Label Text="{Binding Longitude}" />
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" Grid.Row="1" >
-                <Label Text="Latitude: " />
-                <Label Text="{Binding Latitude}" />
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" Grid.Row="2" >
-                <Label Text="Altitude: " />
-                <Label Text="{Binding Altitude}" />
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" Grid.Row="3" >
-                <Label Text="Accuracy: " />
-                <Label Text="{Binding Accuracy}" />
-            </StackLayout>
-
-            <Button x:Name="GetLocationButton" Text="Get Location" Grid.Row="4"></Button>
-
-        </Grid>
-    </ContentPage>
-
-</TabbedPage>
+</ContentPage>
